@@ -1,0 +1,84 @@
+﻿<Window x:Class="HCI_Projekat2_PacManGame.Level2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCI_Projekat2_PacManGame"
+        mc:Ignorable="d"
+        Title="Pac-Man Game" Height="600" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" Icon="images/pacman.jpg">
+    <Canvas Name="level2Canvas" Focusable="true" KeyDown="keyDown_Action" Background="Black" RenderTransformOrigin="0.08,0.464" >
+        <Label Name="scoreText" Content="Score: 0" Canvas.Left="652" Canvas.Top="10" Width="130" Foreground="White" FontSize="22"/>
+
+        <Rectangle Name="pacman" Fill="Yellow" Height="40" Canvas.Left="152" Stroke="Black" Canvas.Top="110" Width="40"/>
+        <Rectangle Name="redGhost" Tag="ghost" Fill="Red" Height="40" Canvas.Left="534" Stroke="Black" Canvas.Top="98" Width="40"/>
+        <Rectangle Name="yellowGhost" Tag="ghost" Fill="Yellow" Height="40" Canvas.Left="534" Stroke="Black" Canvas.Top="413" Width="40"/>
+
+        <Rectangle Tag="wall" Height="15" Canvas.Left="125" Stroke="#FF429DC7" Canvas.Top="76" Width="550" Fill="#FF429DC7" />
+        <Rectangle Tag="wall" Height="15" Canvas.Left="125" Stroke="#FF429DC7"  Canvas.Top="531" Width="550" Fill="#FF429DC7"/>
+        <Rectangle Tag="wall" Fill="#FF429DC7" Height="465" Canvas.Left="125" Stroke="#FF429DC7" Canvas.Top="76" Width="15" />
+        <Rectangle Tag="wall" Fill="#FF429DC7" Height="465" Canvas.Left="660" Stroke="#FF429DC7" Canvas.Top="76" Width="15" />
+        <Rectangle Tag="wall" Fill="#FF429DC7" Height="108" Canvas.Left="388" Stroke="#FF429DC7" Canvas.Top="91" Width="15" />
+        <Rectangle Tag="wall" Fill="#FF429DC7" Height="73" Canvas.Left="392" Stroke="#FF429DC7" Canvas.Top="458" Width="15" />
+        <Rectangle Tag="wall" Height="15" Canvas.Left="445" Stroke="#FF429DC7"  Canvas.Top="384" Width="61" Fill="#FF429DC7"/>
+        <Rectangle Tag="wall" Height="15" Canvas.Left="286" Stroke="#FF429DC7"  Canvas.Top="384" Width="70" Fill="#FF429DC7"/>
+        <Rectangle Tag="wall" Height="15" Canvas.Left="208" Stroke="#FF429DC7"  Canvas.Top="458" Width="70" Fill="#FF429DC7"/>
+        <Rectangle Tag="wall" Fill="#FF429DC7" Height="384" Canvas.Left="208" Stroke="#FF429DC7" Canvas.Top="76" Width="16" />
+        <Rectangle Tag="wall" Height="15" Canvas.Left="593" Stroke="#FF429DC7"  Canvas.Top="384" Width="82" Fill="#FF429DC7"/>
+        <Rectangle Tag="wall" Height="15" Canvas.Left="208" Stroke="#FF429DC7"  Canvas.Top="307" Width="70" Fill="#FF429DC7"/>
+        <Rectangle Tag="wall" Height="15" Canvas.Left="593" Stroke="#FF429DC7"  Canvas.Top="154" Width="82" Fill="#FF429DC7"/>
+        <Rectangle Tag="wall" Height="15" Canvas.Left="593" Stroke="#FF429DC7"  Canvas.Top="252" Width="82" Fill="#FF429DC7"/>
+        <Rectangle Tag="wall" Height="15" Canvas.Left="208" Stroke="#FF429DC7"  Canvas.Top="184" Width="70" Fill="#FF429DC7"/>
+        <Rectangle Tag="wall" Fill="#FF429DC7" Height="73" Canvas.Left="550" Stroke="#FF429DC7" Canvas.Top="458" Width="15" />
+
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="170"  Canvas.Top="312" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="245"  Canvas.Top="428" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="610"  Canvas.Top="428" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="319"  Canvas.Top="282" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="475"  Canvas.Top="282" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="400"  Canvas.Top="282" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="319"  Canvas.Top="228" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="170"  Canvas.Top="428" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="170"  Canvas.Top="366" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="170"  Canvas.Top="496" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="170"  Canvas.Top="252" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="170"  Canvas.Top="190" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="319"  Canvas.Top="128" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="245"  Canvas.Top="128" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="442"  Canvas.Top="491" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="518"  Canvas.Top="491" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="319"  Canvas.Top="496" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="245"  Canvas.Top="496" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="319"  Canvas.Top="428" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="319"  Canvas.Top="174" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="400"  Canvas.Top="384" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="400"  Canvas.Top="428" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="549"  Canvas.Top="428" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="475"  Canvas.Top="428" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="610"  Canvas.Top="496" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="245"  Canvas.Top="282" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="245"  Canvas.Top="228" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="245"  Canvas.Top="384" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="623"  Canvas.Top="228" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="623"  Canvas.Top="174" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="549"  Canvas.Top="228" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="549"  Canvas.Top="174" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="624"  Canvas.Top="110" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="550"  Canvas.Top="110" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="549"  Canvas.Top="384" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="623"  Canvas.Top="336" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="623"  Canvas.Top="282" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="549"  Canvas.Top="336" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="549"  Canvas.Top="282" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="319"  Canvas.Top="336" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="475"  Canvas.Top="336" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="400"  Canvas.Top="336" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="245"  Canvas.Top="336" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="474"  Canvas.Top="228" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="474"  Canvas.Top="174" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="475"  Canvas.Top="110" Width="10" RenderTransformOrigin="5.9,1"/>
+        <Rectangle Tag="gold" Fill="#FFB69607" Height="10" Canvas.Left="400"  Canvas.Top="228" Width="10" RenderTransformOrigin="5.9,1"/>
+       
+        <Label Content="LEVEL 2" Canvas.Left="342" Height="61" Width="133" FontSize="36" Background="Black" Foreground="#FFECDFDF"/>
+
+    </Canvas>
+</Window>

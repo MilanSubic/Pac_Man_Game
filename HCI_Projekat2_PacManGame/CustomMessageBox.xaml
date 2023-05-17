@@ -1,0 +1,54 @@
+﻿<Window x:Class="HCI_Projekat2_PacManGame.CustomMessageBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HCI_Projekat2_PacManGame" mc:Ignorable="d"
+       
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Background="{x:Null}"
+        TextElement.Foreground="Gray"
+        TextElement.FontWeight="Regular"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     FontFamily="Open Sans"
+        Title="CMessageBox" Height="200" Width="400" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" >
+    <Border CornerRadius="5" Background="White">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*"/>
+                <RowDefinition Height="60*"/>
+                <RowDefinition Height="20*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="80*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Name="txtTitle" Text="Info" Foreground="DimGray" VerticalAlignment="Center" FontSize="36" FontWeight="Bold" Height="40"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="12*"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="27*"/>
+                </Grid.ColumnDefinitions>
+                <materialDesign:PackIcon Name="msgLogo" Kind="InfoCircle" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Width="89" Height="96" Foreground="Blue" Margin="10,14,21,10" RenderTransformOrigin="0.506,0.753"/>
+                <TextBlock Name="txtMessage" Grid.Column="1" Text="An Error Occured in the Application" Foreground="DimGray" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Left" TextWrapping="Wrap" Height="69" Margin="0,32,0,19" Width="280" Grid.ColumnSpan="2"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20*"/>
+                    <ColumnDefinition Width="40*"/>
+                    <ColumnDefinition Width="40*"/>
+                    <ColumnDefinition Width="20*"/>
+                </Grid.ColumnDefinitions>
+                <Button Name="btnOk" Grid.Column="1" Content="OK"  HorizontalAlignment="Center" VerticalAlignment="Center" Width="88"  Background="#FF698EF1"  Foreground="White" Height="26" Grid.ColumnSpan="2" Margin="91,0,87,14" Click="btnOk_Click" IsDefault="True"/>
+
+
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

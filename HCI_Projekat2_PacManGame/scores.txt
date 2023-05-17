@@ -1,0 +1,4 @@
+name,score
+stefan,56
+nikola,26
+marko,8
